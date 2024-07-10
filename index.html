@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for centering content */
+        .container {
+            max-width: 1000px; /* Increased max-width for larger container */
+            margin: 50px auto;
+            padding: 350px; /* Increased padding */
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 16px; /* Adjusted border radius */
+            position: relative; /* Ensure relative positioning for absolute links */
+        }
+
+        /* Google logo */
+        .google-logo {
+            display: block;
+            margin: 0 auto;
+            width: 250px; /* Increased width of the logo */
+            height: auto;
+        }
+
+        /* Search form container */
+        .search-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Search form input */
+        .search-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 24px;
+            overflow: hidden;
+        }
+
+        .search-form input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-form input[type="submit"] {
+            background-color: #f2f2f2;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .search-form input[type="submit"]:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Links */
+        .links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .links a {
+            color: #1a0dab;
+            text-decoration: none;
+            margin-left: 20px; /* Increased margin for better spacing */
+            font-size: 16px; /* Increased font size */
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Feeling Lucky */
+        .feeling-lucky {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px; /* Increased font size */
+            color: #757575;
+            text-decoration: none;
+        }
+
+        .feeling-lucky:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google">
+
+        <div class="links">
+            <a href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
+        </div>
+
+        <div class="search-container">
+            <form class="search-form" action="https://www.google.com/search">
+                <input type="text" name="q" placeholder="Search Google...">
+                <input type="submit" value="Google Search">
+            </form>
+        </div>
+
+        <a class="feeling-lucky" href="https://doodles.google/">I'm Feeling Lucky</a>
+    </div>
+</body>
+</html>

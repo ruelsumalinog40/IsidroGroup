@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+        }
+        .search-form {
+            margin-bottom: 20px;
+        }
+        .search-form label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1a0dab;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .search-form input[type="text"] {
+            padding: 10px;
+            border: 1px solid #dfe1e5;
+            border-radius: 6px;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .search-form input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #1a73e8;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        .search-form input[type="submit"]:hover {
+            background-color: #0d6efd;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo">
+        </div>
+        <form class="search-form" action="https://www.google.com/search">
+            <label for="all-words">Find pages with all these words:</label>
+            <input type="text" id="all-words" name="q">
+            
+            <label for="exact-phrase">Find pages with this exact word or phrase:</label>
+            <input type="text" id="exact-phrase" name="as_epq">
+            
+            <label for="any-words">Find pages with any of these words:</label>
+            <input type="text" id="any-words" name="as_oq">
+            
+            <label for="none-words">Find pages with none of these words:</label>
+            <input type="text" id="none-words" name="as_eq">
+            
+            <input type="submit" value="Advanced Search">
+        </form>
+        <a class="back-link" href="index.html">Back to Google Search</a>
+    </div
